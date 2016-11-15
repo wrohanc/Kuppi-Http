@@ -11,7 +11,7 @@ import javax.jws.WebService;
  */
 @WebService(serviceName="POJO_WS")
 public class POJO_WS {
-    @WebMethod(operationName = "new")
+    @WebMethod(operationName = "orderNew")
     public String order(@WebParam(name = "order") String order){
         System.out.println("POJO WS Order new message received :" + order);
 

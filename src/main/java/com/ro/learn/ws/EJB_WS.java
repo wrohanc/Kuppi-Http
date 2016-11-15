@@ -16,7 +16,7 @@ import javax.jws.WebService;
 @Stateless
 @LocalBean
 public class EJB_WS {
-    @WebMethod(operationName = "new")
+    @WebMethod(operationName = "orderNew")
     public String order(@WebParam(name = "order") String order){
         System.out.println("EJB WS Order new message received :" + order);
 
