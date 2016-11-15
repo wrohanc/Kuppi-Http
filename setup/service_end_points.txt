@@ -1,0 +1,40 @@
+Servlet
+    http://localhost:8080/Kuppi-Http/Pojo_Servlet
+    message : {
+                "symbol" : "APPL",
+                "quantity" : 10,
+                "price" : 20.2
+              }
+
+
+WebService - pojo
+    http://localhost:8080/Kuppi-Http/POJO_WS
+    message : {
+                "symbol" : "APPL",
+                "quantity" : 10,
+                "price" : 20.2
+              }
+
+WebService - ejb
+    http://localhost:8080/Kuppi-Http/EJB_WS
+    message : {
+                "symbol" : "APPL",
+                "quantity" : 10,
+                "price" : 20.2
+              }
+
+Rest - pojo
+    http://localhost:8080/Kuppi-Http/rest/pojo/new
+    message : {
+                "symbol" : "APPL",
+                "quantity" : 10,
+                "price" : 20.2
+              }
+
+Rest - ejb
+  http://localhost:8080/Kuppi-Http/rest/ejb/new
+  message : {
+              "symbol" : "APPL",
+              "quantity" : 10,
+              "price" : 20.2
+            }

@@ -1,0 +1,33 @@
+Java
+    - install oracle java 1.8+
+    - set path to installed jdk
+    - verify path by checking java -version
+
+Maven
+    - download apache-maven-3.3.3.zip
+    - extract to a suitable folder (i.e. D:/build_tools/)
+    - set local repository in <MAVEN_HOME>/conf/settings.xml file (i.e. <localRepository>D:/build_tools/repository</localRepository>)
+    - set path (i.e. D:/build_tools/apache-maven-3.3.3/bin)
+    - verify path by checking mvn -version
+
+Build
+    - Open command prompt
+    - Switch to Kuppi-Http folder
+    - build the project by issuing following command "mvn clean install -e"
+    - build idea project by issuing following command "mvn idea:idea -e"
+    - open Kuppi-Http.ipr
+    - you may have to set language level to 8.0 (we have use some features of java 8)
+
+JBoss
+    - download jboss-wildfly 10+ (http://download.jboss.org/wildfly/10.1.0.Final/wildfly-10.1.0.Final.zip)
+    - extract to a suitable folder (i.e. D:/wildfly/)
+    - copy Start_JBoss.bat to <JBOSS_HOME>/bin
+    - run Start_JBoss.bat
+    - check the console and logs
+
+Deploy
+    - copy Kuppi-Http/target/Kuppi-Http.war to <JBOSS_HOME>/standalone/deployment/
+    - start JBoss Wildfly using Start_JBoss.bat
+    - check the console and logs for text (Deployed "Kuppi-Http.war" (runtime-name : "Kuppi-Http.war"))
+
+

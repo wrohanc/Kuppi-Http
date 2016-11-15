@@ -1,0 +1,21 @@
+The implementing class must be annotated with either the javax.jws.WebService or javax.jws.WebServiceProvider annotation.
+
+The implementing class may explicitly reference an SEI through the endpointInterface element of the @WebService annotation, but is not required to do so. If no endpointInterface is not specified in @WebService, an SEI is implicityly defined for the implementing class.
+
+The business methods of the implementing class must be public, and must not be declared static or final.
+
+Business methods that are exposed to web service clients must be annotated with javax.jws.WebMethod.
+
+Business methods that are exposed to web service clients must have JAX-B-compatible parameters and return types. See Default Data Type Bindings.
+
+The implementing class must not be declared final and must not be abstract.
+
+The implementing class must have a default public constructor.
+
+The implementing class must not define the finalize method.
+
+The implementing class may use the javax.annotation.PostConstruct or javax.annotation.PreDestroy annotations on its methods for lifecycle event callbacks.
+
+The @PostConstruct method is called by the container before the implementing class begins responding to web service clients.
+
+The @PreDestroy method is called by the container before the endpoint is removed from operation.
