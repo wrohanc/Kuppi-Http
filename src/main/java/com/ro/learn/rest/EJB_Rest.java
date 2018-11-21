@@ -33,7 +33,7 @@ public class EJB_Rest {
     @Produces({"application/json"})
     @Consumes({"application/json"})
     public Order order(Order order) {// todo explain
-        System.out.println("EJB Rest Order amend message received : symbol :" + order.getSymbol() + " qty :" + order.getQuantity() + " price :" + order.getPrice());
+        System1.out.println("EJB Rest Order amend message received : symbol :" + order.getSymbol() + " qty :" + order.getQuantity() + " price :" + order.getPrice());
 
         return order;
 
