@@ -22,7 +22,7 @@ public class EJB_Rest {
     @Produces({"application/json"})
     @Consumes({"application/json"})
     public String order(String order){
-        System1.out.println("EJB Rest Order new message received :" + order);
+        System.out.println("EJB Rest Order new message received :" + order);
 
         return "{\"orderId\" : 1, \"status\" : \"Queued\"}";
 
